@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int water = 35, bill, gal, bal;
+    double charge = 1.10;
+    
+    
+    cout << "Gallons consumed: ";
+    cin >> gal;
+    cout << "Unpaid balance: ";
+    cin >> bal;
+
+    if (bal > 0)
+    {
+        bill = (((gal * charge) + water)+bal+20);
+    }
+    else
+    {
+        bill = ((gal * charge)+ water);
+    }
+    
+    cout << "*****************************" << endl;
+    cout << "Gallons consumed: " << gal << endl;
+    cout << "Unpaid balance: " << bal << endl;
+    cout << "Total bill: " << bill;
+
+    return 0;
+}
