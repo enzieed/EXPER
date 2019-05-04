@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int fn, sn, tn;
+    
+    cout << "Enter first number: ";
+    cin >> fn;
+    cout << "Enter first number: ";
+    cin >> sn;
+    cout << "Enter first number: ";
+    cin >> tn;
+    
+    if (fn > sn && fn > tn)
+    {
+        cout << "The largest of the three number is " << fn;
+    }
+    if (sn > fn && sn > tn)
+    {
+        cout << "The largest of the three number is " << sn;
+    }
+    if (tn > fn && tn > sn)
+    {
+        cout << "The largest of the three number is " << tn;
+    }
+    
+    return 0;
+}
